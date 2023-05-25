@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body{
+    padding-bottom: 500px;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    max-width: 1080px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo,.sociais{
+    width: 15%;
+    
+}
+.logo img{
+    width: 75px;
+    height: auto;
+    cursor: pointer;
+}
+.menu{
+    width: 100%;
+}
+.menu nav a{
+    color:#fff;
+    text-decoration: none;
+    padding-right: 50px;
+    font-size: 18px;
+    position: relative;
+
+}
+.menu nav a::after{
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg, #FF2500, #FF7100); 
+    position: absolute;
+    top: 20px;
+    left: 0;
+    transition: width 0.5s;
+
+}
+.menu nav a:hover::after{
+    width: 30px;
+}
+.sociais button{
+    width: 40px;
+    height: 40px;
+    background-image: linear-gradient(45deg,#FF2500, #FF7100);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.sociais button i{
+    font-size: 25px;
+    color: #fff;
+}
+.botao{
+    width: 40px;
+    height: 40px;
+   
+.botao i{
+    font-size: 25px;
+    color: #fff;
+    background-image: linear-gradient(45deg,#FF2500, #FF7100);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+}
+header{
+    background-color: #000;
+    width: 100%;
+    padding: 10px;
+}
+.viewport{
+    width: device-width ;
+    zoom: 1.0 ;
+  }
+  @media screen and (max-width: 992px){
+    .container{
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+  
+.item{
+    background-color: #ccc;
+    border: 2px solid blue;
+    height: 50px;
+    width: 50px; 
+}
+.produtos{
+    flex-basis: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #ccc;
+    border: 2px solid blue;
+    height: 50px;
+    flex-basis: 30px;
+
+}
+.caixas{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.produtos img{
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.caixas p{
+    font-size: 14px;
+    color: #666;
+}
